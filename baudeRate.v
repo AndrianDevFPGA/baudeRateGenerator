@@ -2,6 +2,7 @@
   Name : Rakotojaona Nambinina
   email : Andrianoelisoa.Rakotojaona@gmail.com
   Description : Bauderate generator code in Verilog
+  This code is inspired by this link :  http://electronoobs.com/eng_circuitos_tut26_code1.php
 */
 
 module baudeRate(
