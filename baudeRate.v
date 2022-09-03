@@ -78,3 +78,40 @@ module tbBaudeRateGenerator(
 endmodule
 
 */
+/*
+
+module baudRate (
+                clk,
+                rst,
+                baudeRate,
+                tick
+                );
+    input clk;
+    input rst;
+    input [31:0] baudeRate;
+    output reg tick;
+    
+    integer counter;
+    
+    always @ (posedge clk)
+      begin
+        if (rst)
+          begin
+            counter <= 1;
+          end 
+        else
+          counter <= counter + 1;
+          begin
+            if (counter == baudeRate)
+              begin
+                tick <= 1;
+                counter <= 1;
+              end 
+            else
+              begin
+                tick <= 0;
+              end 
+          end 
+      end 
+endmodule
+*/
