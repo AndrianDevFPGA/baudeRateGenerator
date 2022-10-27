@@ -1,0 +1,3 @@
+[submodule "WP6-TTNI"]
+	path = WP6-TTNI
+	url = https://github.com/AndrianDevFPGA/WP6-TTNI.git
