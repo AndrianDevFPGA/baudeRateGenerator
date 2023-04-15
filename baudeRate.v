@@ -38,6 +38,47 @@ module baudeRate(
       end 
     
 endmodule
+
+/*
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use ieee.std_logic_unsigned.all;
+
+entity bauderatemodule is
+    port (
+        clk : in std_logic;
+        rst : in std_logic;
+        bauderate : in std_logic_vector(16 downto 0);
+        tick : out std_logic
+    );
+end bauderatemodule;
+
+architecture rtl of bauderatemodule is
+    signal counter : std_logic_vector(16 downto 0);
+begin
+    process (clk) is
+    begin
+        if (rst = '1') then
+            tick <= '0';
+            counter <= (others => '0');
+        elsif (rising_edge (clk)) then
+            if (counter = bauderate) then
+                tick <= '1';
+                counter <= (others => '0');
+            else
+                tick <= '0';
+                counter <= counter + 1;
+            end if;
+        end if;
+    end process;
+end rtl;
+
+*/
+
+
+
 /*
 // Test bench code for bauderate generator
 
